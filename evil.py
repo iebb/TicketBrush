@@ -24,7 +24,7 @@ def mobile():
      
 success = total = 0
 rnd = random.randrange(1, 10000000)
-for i in range(10000):
+while success < 114514:
 	s = requests.Session()
 	recog = ''
 	while len(recog) != 4:
