@@ -4,6 +4,7 @@ import math
 import requests
 import pytesseract
 import random
+from StringIO import StringIO
 
 def dx(u):
 	return int(math.sin(u * 3.1416 * 2 + 0.7) * 8 + u * 5)
