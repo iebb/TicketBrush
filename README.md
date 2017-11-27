@@ -16,6 +16,9 @@ Ubuntu:
 
 `apt install tesseract-ocr tesseract-ocr-eng`
 
+
+脚本：`evil.py`
+
 默认刷 114514 次，觉得够了就停了吧（x
 
 
