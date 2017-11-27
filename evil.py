@@ -29,10 +29,10 @@ while success < 114514:
 	recog = ''
 	while len(recog) != 4:
 		r = s.get("http://act.ll.sdo.com/Act20171127/AuthorCode.aspx?method=queryReserveNum")
-		open("captcha-%d.jpg" % rnd, "wb+").write(r.content)
-		im = Image.open("captcha-%d.jpg" % rnd)
+		file = StringIO()
+		file.write(r.content)
+		im = Image.open(file)
 		io = un(im)
-		io.save("und.jpg")
 		recog = pytesseract.image_to_string(io, config='-psm 7')
 	r2 = s.post("http://act.ll.sdo.com/Act20171127/Server/Reserves.ashx?method=submit&code=%s&mobile=%s" % (
 		recog, mobile()
