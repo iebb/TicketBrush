@@ -1,5 +1,5 @@
 # TicketBrush
-刷票（迫真
+刷票（迫真（已废弃
 
 Python 2.7 下 
 
